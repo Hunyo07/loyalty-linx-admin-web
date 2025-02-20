@@ -17,7 +17,7 @@ import NotificationView from '@/views/Pages/Settings/NotificationView.vue'
 import ProfileViews from '@/views/ProfileView.vue'
 import ThemeView from '@/views/Pages/Settings/ThemeView.vue'
 import ProfileView from '@/views/Pages/Settings/ProfileView.vue'
-
+import Credits from '@/views/Pages/CreditsView.vue'
 // import SigninView from '../views/Authentication/SigninView.vue'
 // import AccountSettings from '@/views/Pages/Settings/AccountView.vue'
 // import NotificationSetting from '@/views/Pages/Settings/NotificationView.vue'
@@ -73,6 +73,14 @@ const routes = [
     component: ProfileView,
     meta: {
       title: 'Profile Settings'
+    }
+  },
+  {
+    path: '/credits',
+    name: 'credits',
+    component: Credits,
+    meta: {
+      title: 'Manage Credits'
     }
   },
   {

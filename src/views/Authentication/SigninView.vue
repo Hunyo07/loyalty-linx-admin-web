@@ -6,7 +6,7 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 import { ref } from 'vue'
-const loginEp = 'http://127.0.0.1:5000/api/admin/login'
+const loginEp = 'http://192.168.100.243:5000/api/admin/login'
 const themeUrl = 'http://192.168.100.243:5000/api/theme/get/active'
 const email = ref('')
 const password = ref('')
@@ -42,6 +42,7 @@ const handleSignIn = async () => {
     if (response.ok) {
       getActiveTheme()
       localStorage.setItem('token', JSON.stringify(data.token))
+      localStorage.setItem('adminProfile', JSON.stringify(data.adminProfile))
 
       router.push({
         path: '/ecommerce'
