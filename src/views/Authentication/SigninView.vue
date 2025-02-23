@@ -6,8 +6,8 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 import { ref } from 'vue'
-const loginEp = 'http://192.168.100.243:5000/api/admin/login'
-const themeUrl = 'http://192.168.100.243:5000/api/theme/get/active'
+const loginEp = 'http://192.168.100.206:5000/api/admin/login'
+const themeUrl = 'http://192.168.100.206:5000/api/theme/get/active'
 const email = ref('')
 const password = ref('')
 const error = ref(null)

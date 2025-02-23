@@ -14,8 +14,8 @@ const errors = ref({
   backgroundcolor: ''
 })
 const successMessage = ref('')
-const themeUrl = 'http://192.168.100.243:5000/api/theme/get/active'
-const createThemeEp = 'http://192.168.100.243:5000/api/theme/create/themes'
+const themeUrl = 'http://192.168.100.206:5000/api/theme/get/active'
+const createThemeEp = 'http://192.168.100.206:5000/api/theme/create/themes'
 const themeActiveData = ref({})
 const colors = ref({
   primaryColor: '#000000',
